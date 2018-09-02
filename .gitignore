@@ -1,0 +1,7 @@
+.idea/
+env3/
+db.sqlite3
+app.bundle.js*
+node_modules
+media/
+.pytest_cache

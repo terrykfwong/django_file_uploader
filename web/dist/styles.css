@@ -1,0 +1,19 @@
+div.alert:empty,
+pre.alert:empty{
+    display: none;
+}
+
+#main-row {
+    min-height:500px;
+    position:relative;
+}
+
+.navbar-inner .container a {
+    line-height: 40px;
+}
+
+.registration {
+    border: 1px solid rgb(216, 222, 226);
+    border-radius: 5px;
+    padding: 30px;
+}
