@@ -2,21 +2,21 @@
 from __future__ import unicode_literals
 
 import json
-
-from django.core.exceptions import ObjectDoesNotExist
-from django.core.files.storage import FileSystemStorage
-from django.db import IntegrityError
-from django.http import HttpResponse, StreamingHttpResponse, JsonResponse
-from django.middleware.csrf import get_token
 import os
 import mimetypes
-from wsgiref.util import FileWrapper
-from django.contrib.auth import login, logout, authenticate
+
 from app.models import File
-from django.db.models import Q
-from uploader import settings
-from django.core.serializers.json import DjangoJSONEncoder
+from django.contrib.auth import login, logout, authenticate
 from django.contrib.auth.models import User
+from django.core.exceptions import ObjectDoesNotExist
+from django.core.files.storage import FileSystemStorage
+from django.core.serializers.json import DjangoJSONEncoder
+from django.db import IntegrityError
+from django.db.models import Q
+from django.http import HttpResponse, StreamingHttpResponse, JsonResponse
+from django.middleware.csrf import get_token
+from wsgiref.util import FileWrapper
+from uploader import settings
 
 
 class UploaderEncoder(DjangoJSONEncoder):

@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-import json
-
 import datetime
-from django.test import TestCase
+import json
+import pytz
+
 
 from app.models import File
-from unittest import mock
 from django.contrib.auth.models import User
-import pytz
+from django.test import TestCase
+from unittest import mock
 
 
 class TestRegister(TestCase):
